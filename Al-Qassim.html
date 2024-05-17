@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A tour guide</title>
+        <!--Icon library link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="Al-Qassim.css">
+    </head>
+    <body>
+     <!--====== Header Section Start ======-->
+   <div>
+    <a href="#"><img src="logo.png"></a>
+  </div>
+
+  <header class="header">
+    
+      
+      <!-- Navigation -->
+            <nav class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="about us .html">About us</a>
+        <a href="Login.html">Login</a>
+                <a href="Connectus.html">Connect us</a>
+        <a href="Regions.html">Regions</a>
+      </ul>
+            </nav>
+</header>
+        <main>
+            <ul class='slider'>
+              <li class='item' style="background-image: url('Al-Qassim-0.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Al-Qassim"</h2><br>
+                  <h5>It is one of the administrative regions in the Kingdom of Saudi Arabia, and its emirate is based in the city of Buraidah. It is characterized by an abundance of groundwater, and supplies the Kingdom of Saudi Arabia with the finest types of dates and vegetables</h5>
+                  <br><br><br>
+                  <a class="button" href="pay.html">Pay</a>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Al-Mousakif\ Popular\ Market.jpeg')">
+                <div class='content'>
+                  <h2 class='title'>"Al-Mousakif Popular Market"</h2><br>
+                  <h5> If you are a fan of popular markets, and walking through their lanes that are full of history and heritage, then you must visit the Al-Musakif Popular Market in Al-Qassim, and explore the most beautiful products of clothing and jewelry, taste the most delicious popular dishes with authentic flavors, drink Saudi coffee, and wander between the shops and popular councils. , the exhibition square, and the distinctive restaurants in the market</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Dirty\ Country\ Park.jpeg')">
+                <div class='content'>
+                  <h2 class='title'>"Dirty Country Park"</h2><br>
+                  <h5>A distinctive park in which the green nature extends over vast distances, where it is pleasant to stroll and walk, and the fountains and waterfalls add a wonderful touch to the place. In Dirati Country Park you can also do several activities, such as: getting to know horses and trying to ride them, and watching classic cars, in addition to places where drinks are served. And delicious foods, for a unique tourist experience</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Al-Shamsiyah\ Heritage\ Museum.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Al-Shamsiyah Heritage Museum"</h2><br>
+                  <h5>Professor Abdullah Al-Barrak established the museum, and through it he expressed everything related to simple ancient living, as the museum collected rare manuscripts, heritage tools, and ancient coins under its roof</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('The\ historic\ Jarda\ market.jpg">
+                <div class='content'>
+                  <h2 class='title'>"The historic Jarda market"</h2><br>
+                  <h5>The hotbed of merchant caravans is the historic Jarda Market, known as Jarda Buraidah. It was considered one of the most important commercial markets in the past in the city of Buraidah and the Najd region, due to the huge diversity of goods and products in the market. It also represented the largest market for camels in the world, as described by the orientalist Duati in 1811 AD. It was visited by the people of the city and its surrounding cities, villages, and desert residents</h5>
+                  <br><br><br>
+                </div>
+              </li>
+            </ul>
+            <nav class='nav'>
+              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+          </main>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+          <script>
+            const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+  document.addEventListener('click',activate,false);
+          </script>
+        </body>
+  </html>

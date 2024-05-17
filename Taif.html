@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A tour guide</title>
+        <!--Icon library link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="Taif.css">
+    </head>
+    <body>
+     <!--====== Header Section Start ======-->
+   <div>
+    <a href="#"><img src="logo.png"></a>
+  </div>
+
+  <header class="header">
+    
+      
+      <!-- Navigation -->
+            <nav class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="about us .html">About us</a>
+        <a href="Login.html">Login</a>
+                <a href="Connectus.html">Connect us</a>
+        <a href="Regions.html">Regions</a>
+      </ul>
+            </nav>
+</header>
+        <main>
+            <ul class='slider'>
+              <li class='item' style="background-image: url('taif-0.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Taif"</h2><br>
+                  <h5>Taif is a Saudi city located in the west of the Kingdom of Saudi Arabia, belonging to the Makkah Al-Mukarramah region on both sides of the Waj Valley. It is approximately 75 km away from the city of Mecca and is surrounded by mountains on all sides. It rises above sea level, which gives it a pleasant atmosphere and an old summer resort for the people. And the nearby Saudi cities of Hijaz, such as Mecca and Jeddah</h5>
+                  <br><br><br>
+                  <a class="button" href="pay.html">Pay</a>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Rump\ Garden.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Rump Garden"</h2><br>
+                  <h5> Al-Radaf Park provides an ideal opportunity to view the fresh nature of Taif, meet the local people, taste their dishes and drink local-style tea</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Shifa\ Mountain.jpeg')">
+                <div class='content'>
+                  <h2 class='title'>"Shifa Mountain"</h2><br>
+                  <h5>When you stand on the heights of the Sarawat Mountains, you will look towards a wonderful nature that resembles a scene from a fairy tale. Among the coffee and tea stalls, and the smoke of barbecue, you will find the joy of mountain trekking amidst the vibrant nature</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Peace\ Park.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Peace Park"</h2><br>
+                  <h5>It is a large park located in the heart of Abha, and includes many gardens, parks, and sports fields</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Rose\ products\ factories.webp">
+                <div class='content'>
+                  <h2 class='title'>"Rose products factories"</h2><br>
+                  <h5>The smell of Taif roses welcomes you at the doors of the factories, and takes you on an exciting journey to discover the most famous local craft. In addition to spending an enjoyable time among the roses, you can drink coffee or tea in the local style and share unforgettable moments with those you love</h5>
+                  <br><br><br>
+                </div>
+              </li>
+            </ul>
+            <nav class='nav'>
+              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+          </main>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+          <script>
+            const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+  document.addEventListener('click',activate,false);
+          </script>
+        </body>
+  </html>

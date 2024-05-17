@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A tour guide</title>
+        <!--Icon library link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="abha.css">
+    </head>
+    <body>
+     <!--====== Header Section Start ======-->
+   <div>
+    <a href="#"><img src="logo.png"></a>
+  </div>
+
+  <header class="header">
+    
+      
+      <!-- Navigation -->
+            <nav class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="about us .html">About us</a>
+        <a href="Login.html">Login</a>
+                <a href="Connectus.html">Connect us</a>
+        <a href="Regions.html">Regions</a>
+      </ul>
+            </nav>
+</header>
+        <main>
+            <ul class='slider'>
+              <li class='item' style="background-image: url('aseer.jpeg')">
+                <div class='content'>
+                  <h2 class='title'>"Aseer"</h2><br>
+                  <h5>characterized by extremely cold weather, snowfall, green nature, and high mountains</h5>
+                  <br><br><br>
+                  <a class="button" href="pay.html">Pay</a>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Rijal\ Al-Ma.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Rijal Al ma"</h2><br>
+                  <h5> There is also the village of Rijal Al-Ma which was built more than 500 years ago</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Souda\ Mountains.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Souda Mountains"</h2><br>
+                  <h5>It is a mountain range located north of Abha, and is characterized by its picturesque nature and wonderful view of the city</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Peace\ Park.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Peace Park"</h2><br>
+                  <h5>It is a large park located in the heart of Abha, and includes many gardens, parks, and sports fields</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Abha\ Palace.jpg">
+                <div class='content'>
+                  <h2 class='title'>"Abha Palace"</h2><br>
+                  <h5>It is a historic palace built in the nineteenth century, and is distinguished by its magnificent architecture</h5>
+                  <br><br><br>
+                </div>
+              </li>
+            </ul>
+            <nav class='nav'>
+              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+          </main>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+          <script>
+            const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+  document.addEventListener('click',activate,false);
+          </script>
+        </body>
+  </html>

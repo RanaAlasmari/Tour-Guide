@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A tour guide</title>
+        <!--Icon library link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="Dammam.css">
+    </head>
+    <body>
+     <!--====== Header Section Start ======-->
+   <div>
+    <a href="#"><img src="logo.png"></a>
+  </div>
+
+  <header class="header">
+    
+      
+      <!-- Navigation -->
+            <nav class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="about us .html">About us</a>
+        <a href="Login.html">Login</a>
+                <a href="Connectus.html">Connect us</a>
+        <a href="Regions.html">Regions</a>
+      </ul>
+            </nav>
+</header>
+        <main>
+            <ul class='slider'>
+              <li class='item' style="background-image: url('dammam-0.png')">
+                <div class='content'>
+                  <h2 class='title'>"Dammam"</h2><br>
+                  <h5>Dammam is a Saudi city located on the coast of the Arabian Gulf. It is the capital of the Eastern Province and its administrative center</h5>
+                  <br><br><br>
+                  <a class="button" href="pay.html">Pay</a>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Dammam\ Corniche.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Dammam Corniche"</h2><br>
+                  <h5> Dammam Corniche provides a unique area of entertainment for children and families, as it includes an amusement park equipped with different and fun games that you will not resist trying some of</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Popular\ Village\ in\ Dammam.png')">
+                <div class='content'>
+                  <h2 class='title'>"Popular Village"</h2><br>
+                  <h5>A cultural village with handmade manuscripts, antiques, and old cars, and includes a traditional Saudi restaurant</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Jabal\ Al\ Muraikbat\ Park.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Jabal Al Muraikbat Park"</h2><br>
+                  <h5>An urban park surrounded by weathered rock formations, it has a jogging track and a children's play area</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Al\ Marjan\ Island.jpg">
+                <div class='content'>
+                  <h2 class='title'>"Al Marjan Island"</h2><br>
+                  <h5>Al Marjan Island is a tourist island in the city of Dammam, east of the Kingdom of Saudi Arabia, and it is the first artificial island in the Kingdom</h5>
+                  <br><br><br>
+                </div>
+              </li>
+            </ul>
+            <nav class='nav'>
+              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+          </main>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+          <script>
+            const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+  document.addEventListener('click',activate,false);
+          </script>
+        </body>
+  </html>

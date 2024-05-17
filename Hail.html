@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A tour guide</title>
+        <!--Icon library link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="Hail.css">
+    </head>
+    <body>
+     <!--====== Header Section Start ======-->
+   <div>
+    <a href="#"><img src="logo.png"></a>
+  </div>
+
+  <header class="header">
+    
+      
+      <!-- Navigation -->
+            <nav class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="about us .html">About us</a>
+        <a href="Login.html">Login</a>
+                <a href="Connectus.html">Connect us</a>
+        <a href="Regions.html">Regions</a>
+      </ul>
+            </nav>
+</header>
+        <main>
+            <ul class='slider'>
+              <li class='item' style="background-image: url('Hail-0.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Hail"</h2><br>
+                  <h5>Hail is a Saudi city, and the administrative and regional capital of the Hail region. It is famous for the two famous mountains, Mount Salma and Mount Aja. Hail is located in the Jabal Aja region, west of Wadi Al-Adeira, and in its heart is the Samah Well, famous for its abundant and sweet water</h5>
+                  <br><br><br>
+                  <a class="button" href="pay.html">Pay</a>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Aaref\ Historical\ Castle.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Aaref Historical Castle"</h2><br>
+                  <h5> There are many tourist attractions in Hail, which combine tradition and modernity. In Aaref Castle, you can enjoy contemplating the architectural arts that the ancients excelled in executing. In the past, the castle was a fortress protecting against enemies, and its towers were used to monitor roads and convoys, and it went through many events, but now, it is considered an archaeological museum and a tourist attraction</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Aja\ Park.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Aja Park"</h2><br>
+                  <h5>The largest amusement park in Hail awaits you in Aja Park, with a variety of games, such as: aerial, electric, and others. The park includes sessions for you to relax in during the period in which your children enjoy times filled with play and fun. You will also find in the park an opportunity to ride horses and motorcycles, and a shopping area. It includes a variety of restaurants and cafes to complete your outing</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('Samra\ Mountain.jpg')">
+                <div class='content'>
+                  <h2 class='title'>"Samra Mountain"</h2><br>
+                  <h5>Al-Samra Mountain takes you on an amazing journey of exploration that reveals to you a rich history, dating back more than 1,500 years. The mountain contains Al-Samra Park, with its waterfalls and beautiful green surfaces, and 4 km away there is an ancient history worth visiting in Aaref Castle.</h5>
+                  <br><br><br>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('The\ historic\ city\ of\ Faid\ in\ Hail.jpg">
+                <div class='content'>
+                  <h2 class='title'>"The historic city of Faid in Hail"</h2><br>
+                  <h5>Historians' books describe the historical status of the city of Fayd as the third most important ancient city after Kufa and Basra, as it was the middle of the ancient Iraqi pilgrimage route known as Darb Zubaydah, connecting Iraq and Mecca. The historic city of Faid is located in the southeast of Hail, 120 km away</h5>
+                  <br><br><br>
+                </div>
+              </li>
+            </ul>
+            <nav class='nav'>
+              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+          </main>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+          <script>
+            const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+  document.addEventListener('click',activate,false);
+          </script>
+        </body>
+  </html>
